@@ -39,7 +39,7 @@
     UIImage* rainbow1 = [self imageByName:@"neapolitan1"];
     float rainbowWidth = 40;
 
-    int rainbowSegmentCount = centerX / rainbowWidth;
+    int rainbowSegmentCount = centerX / rainbowWidth + 1;
     for (int i = 0; i < rainbowSegmentCount; i++) {
         OLImageView* iv = [[OLImageView alloc] initWithFrame:CGRectMake(centerX - (rainbowWidth/2) - (i * rainbowWidth) - rainbowWidth/2,
                                                                         centerY - 45,

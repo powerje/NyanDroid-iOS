@@ -29,6 +29,7 @@
 		B52694FB17519D9E002CF620 /* star.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52694FA17519D9D002CF620 /* star.gif */; };
 		B52694FE1751A70D002CF620 /* neapolitan0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52694FC1751A70C002CF620 /* neapolitan0.gif */; };
 		B52694FF1751A70D002CF620 /* neapolitan1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52694FD1751A70D002CF620 /* neapolitan1.gif */; };
+		B57347A91752C6EE00D602FB /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57347A81752C6EE00D602FB /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		B52694FA17519D9D002CF620 /* star.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = star.gif; path = ../../Graphics/white_star/star.gif; sourceTree = "<group>"; };
 		B52694FC1751A70C002CF620 /* neapolitan0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = neapolitan0.gif; path = ../../Graphics/rainbow/neapolitan0.gif; sourceTree = "<group>"; };
 		B52694FD1751A70D002CF620 /* neapolitan1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = neapolitan1.gif; path = ../../Graphics/rainbow/neapolitan1.gif; sourceTree = "<group>"; };
+		B57347A81752C6EE00D602FB /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				B526945617518EBE002CF620 /* NDAppDelegate.h */,
 				B526945717518EBE002CF620 /* NDAppDelegate.m */,
 				B526945F17518EBE002CF620 /* MainStoryboard.storyboard */,
+				B57347A81752C6EE00D602FB /* MainStoryboard_iPad.storyboard */,
 				B526946217518EBE002CF620 /* NDViewController.h */,
 				B526946317518EBE002CF620 /* NDViewController.m */,
 				B526944E17518EBE002CF620 /* Supporting Files */,
@@ -226,6 +229,7 @@
 				B52694FB17519D9E002CF620 /* star.gif in Resources */,
 				B52694FE1751A70D002CF620 /* neapolitan0.gif in Resources */,
 				B52694FF1751A70D002CF620 /* neapolitan1.gif in Resources */,
+				B57347A91752C6EE00D602FB /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +332,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nyandroid/Nyandroid-Prefix.pch";
 				INFOPLIST_FILE = "Nyandroid/Nyandroid-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -339,7 +345,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nyandroid/Nyandroid-Prefix.pch";
 				INFOPLIST_FILE = "Nyandroid/Nyandroid-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
