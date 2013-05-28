@@ -132,4 +132,15 @@
     [self.view bringSubviewToFront:self.nyandroid];
 }
 
+#pragma mark - Orientation stuffs
+
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+}
+
+
 @end
