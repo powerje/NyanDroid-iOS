@@ -28,12 +28,15 @@
     reusableImageViews = [NSMutableArray array];
     rainbowViews = [NSMutableArray array];
     
-    // setup nyandroid
-    self.nyandroid.image = [self imageByName:@"nyandroid"];
-    
-    // setup rainbow
+    // setup nyandroid & rainbow
     int centerX = width / 2;
     int centerY = height / 2;
+
+    self.nyandroid.image = [self imageByName:@"nyandroid"];
+    self.nyandroid.frame = CGRectMake(centerX - self.nyandroid.frame.size.width/2,
+                                      centerY - self.nyandroid.frame.size.height/2 - 16,
+                                      self.nyandroid.frame.size.width,
+                                      self.nyandroid.frame.size.height);
 
     UIImage* rainbow0 = [self imageByName:@"neapolitan0"];
     UIImage* rainbow1 = [self imageByName:@"neapolitan1"];
